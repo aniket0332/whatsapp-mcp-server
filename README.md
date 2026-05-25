@@ -1,4 +1,3 @@
-# WhatsApp MCP Bridge
 A Python-based MCP server built with **FastMCP** that connects Claude Desktop to WhatsApp through a local bridge.
 
 This project focuses on exposing WhatsApp functionality as MCP tools, enabling Claude Desktop to interact with chats through a standardized local interface for messaging, chat access, and conversation workflows.
