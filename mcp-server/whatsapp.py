@@ -146,6 +146,7 @@ def list_messages(
 ) -> List[Message]:
     """Get messages matching the specified criteria with optional context."""
     try:
+        print('here');
         conn = sqlite3.connect(MESSAGES_DB_PATH)
         cursor = conn.cursor()
         

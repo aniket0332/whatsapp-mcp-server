@@ -27,45 +27,41 @@ def search_contacts(query: str) -> List[Dict[str, Any]]:
 
 @mcp.tool()
 def list_messages(
-    after: Optional[str] = None,
-    before: Optional[str] = None,
-    sender_phone_number: Optional[str] = None,
-    chat_jid: Optional[str] = None,
-    query: Optional[str] = None,
+    after: str = "",
+    before: str = "",
+    sender_phone_number: str = "",
+    chat_jid: str = "",
+    query: str = "",
     limit: int = 20,
     page: int = 0,
     include_context: bool = True,
     context_before: int = 1,
     context_after: int = 1
-) -> List[Dict[str, Any]]:
-    """Get WhatsApp messages matching specified criteria with optional context.
-    
-    Args:
-        after: Optional ISO-8601 formatted string to only return messages after this date
-        before: Optional ISO-8601 formatted string to only return messages before this date
-        sender_phone_number: Optional phone number to filter messages by sender
-        chat_jid: Optional chat JID to filter messages by chat
-        query: Optional search term to filter messages by content
-        limit: Maximum number of messages to return (default 20)
-        page: Page number for pagination (default 0)
-        include_context: Whether to include messages before and after matches (default True)
-        context_before: Number of messages to include before each match (default 1)
-        context_after: Number of messages to include after each match (default 1)
-    """
-    messages = whatsapp_list_messages(
-        after=after,
-        before=before,
-        sender_phone_number=sender_phone_number,
-        chat_jid=chat_jid,
-        query=query,
-        limit=limit,
-        page=page,
-        include_context=include_context,
-        context_before=context_before,
-        context_after=context_after
-    )
-    return messages
+) -> str:
+    """Get WhatsApp messages matching specified criteria."""
 
+    try:
+        print("LIST_MESSAGES CALLED")
+
+        messages = whatsapp_list_messages(
+            after=after or None,
+            before=before or None,
+            sender_phone_number=sender_phone_number or None,
+            chat_jid=chat_jid or None,
+            query=query or None,
+            limit=limit,
+            page=page,
+            include_context=include_context,
+            context_before=context_before,
+            context_after=context_after
+        )
+
+        return str(messages)
+
+    except Exception as e:
+        print("LIST_MESSAGES ERROR:", e)
+        return f"Error: {str(e)}"
+    
 @mcp.tool()
 def list_chats(
     query: Optional[str] = None,
