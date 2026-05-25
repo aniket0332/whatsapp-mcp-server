@@ -7,6 +7,12 @@ This project focuses on exposing WhatsApp functionality as MCP tools, enabling C
 - Reading message history
 - Searching conversations
 
+## Demo
+
+<img width="1512" height="993" alt="Screenshot 2026-05-25 211433" src="https://github.com/user-attachments/assets/c5bf64e5-da44-4a06-aba4-d78600e4239b" />
+<img width="1496" height="983" alt="Screenshot 2026-05-25 211545" src="https://github.com/user-attachments/assets/9bae0e5c-e805-4752-a4cf-03e1f0162c53" />
+<img width="1292" height="97" alt="Screenshot 2026-05-25 211621" src="https://github.com/user-attachments/assets/f84d1f59-8fe9-4e99-91da-9628c72167f1" />
+
 ## Architecture
 
 ```text
@@ -142,11 +148,4 @@ Add to Claude Desktop MCP config:
 
 Restart Claude Desktop.
 
----
-
-## Working Example
-
-<img width="1512" height="993" alt="Screenshot 2026-05-25 211433" src="https://github.com/user-attachments/assets/c5bf64e5-da44-4a06-aba4-d78600e4239b" />
-<img width="1496" height="983" alt="Screenshot 2026-05-25 211545" src="https://github.com/user-attachments/assets/9bae0e5c-e805-4752-a4cf-03e1f0162c53" />
-<img width="1292" height="97" alt="Screenshot 2026-05-25 211621" src="https://github.com/user-attachments/assets/f84d1f59-8fe9-4e99-91da-9628c72167f1" />
 
