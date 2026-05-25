@@ -1,0 +1,77 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# Go
+# =========================
+bin/
+dist/
+*.exe
+*.test
+*.out
+
+# Go workspace / module cache
+go.work.sum
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.local
+*.pem
+*.key
+*.crt
+
+# =========================
+# Database / WhatsApp session
+# =========================
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+store/
+session/
+auth/
+whatsapp-session/
+device-store.json
+
+# whatsmeow session files
+*.bolt
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Claude / MCP temp files
+# =========================
+.mcp/
+.cache/
